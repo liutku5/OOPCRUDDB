@@ -18,10 +18,10 @@ public class Author {
     public Author() {
     }
 
-    public Author(long id, String surname, String name) {
+    public Author(long id, String name, String surname) {
         this.id = id;
-        this.surname = surname;
         this.name = name;
+        this.surname = surname;
     }
 
     public static ArrayList<Author> selectAll() {
@@ -135,10 +135,9 @@ public class Author {
     }
     @Override
     public String toString() {
-        return "Author{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                '}';
+        return "Author: " +
+                "id: " + id +
+                ", name: " + name  +
+                ", surname: " + surname;
     }
 }
